@@ -73,6 +73,7 @@ The parameter files for data processing could be found here:
 The path files for simplifiled data processing workflow could be found here:
 `/ccs/proj/geo111/wenjie/AdjointTomography/M32/simpy/paths`
 
+---
 ### 3. Adjoint Simulation
 
 You need to copy the `adjoint.h5` and `STATIONS_ADJOINT` (generated from the last step) to the forward run directory.
@@ -84,6 +85,7 @@ simulation_type=3
 
 Also the adjoint simulation would take longer time compared to the forwardi simulation. So remember to change the walltime.
 
+---
 ### 4. Post-processing
 The post-processing includes following steps:
 
@@ -99,6 +101,7 @@ The post-processing includes following steps:
     * L-BFGS: `/ccs/proj/geo111/wenjie/AdjointTomography/M32/post_proc/KernelProcessing/examples/lbfgs.M31`
 7. Update model for various step length: apply the search direction onto the old model with different step length and get the new model. `/ccs/proj/geo111/wenjie/AdjointTomography/M32/post_proc/KernelProcessing/07_pbs_update_model.bash`
 
+---
 ### 5. Line Search
 
 This step is to search the optimal step length, and find  the model with minimum overal misfit.
@@ -115,7 +118,8 @@ Example scripts for data processing are located: `/ccs/proj/geo111/wenjie/Adjoin
 
 Then you need to sum the misfit to get overal misfit for the subset earthquake events: `/ccs/proj/geo111/wenjie/AdjointTomography/M32/line_search/measurements/misfit`
 
-#### 6. Other notes
+---
+### 6. Other notes
 
 1. Iteration scripts are located: `/ccs/proj/geo111/wenjie/AdjointTomography`. You can check each iteration, for example, `/ccs/proj/geo111/wenjie/AdjointTomography/M32`
 
