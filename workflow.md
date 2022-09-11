@@ -127,5 +127,11 @@ Then you need to sum the misfit to get overal misfit for the subset earthquake e
 changes between iterations. Example scripts are `/ccs/proj/geo111/wenjie/AdjointTomography/compare_iterations/misfit/misfit.M32` and plotting 
 overall misfit scripts are here: `/ccs/proj/geo111/wenjie/AdjointTomography/compare_iterations/misfit/plot_misfit`.
 
+3. The simulation and data processing directory on the scratch system is here: `/gpfs/alpine/geo111/proj-shared/lei/radial_ani`. Data might be purged after 60 days.
+
+4. GLAD-M26 -- GLAD-M33 data is archived on HPSS: `/home/lei/AdjointTomography/radial_ani`
+
+5. The launch script is located here: `/ccs/proj/geo111/wenjie/AdjointTomography`
+
 
 
